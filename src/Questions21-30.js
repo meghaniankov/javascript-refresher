@@ -1,7 +1,13 @@
 // Question 21
 
 function swapKeysAndValuesInObject(object) {
+  var swapped = {}
+  
+  for(var prop in object) {
+    swapped[object[prop]] = Number(prop)
+  }
 
+  return swapped
 };
 
 // Question 22
