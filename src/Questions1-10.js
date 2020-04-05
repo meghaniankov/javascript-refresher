@@ -62,7 +62,8 @@ function dropFirstThreeElements(array) {
 // Question 7
 
 function addElementToBeginningOfArray(array, element) {
-
+  array.unshift(element)
+  return array
 };
 
 // Question 8
