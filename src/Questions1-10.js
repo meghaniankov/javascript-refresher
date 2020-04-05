@@ -1,7 +1,13 @@
 // Question 1
 
 function selectElementsStartingWithE(array) {
-
+  var eElements = []
+  array.forEach(word => {
+    if(word[0].toLowerCase() === 'e') {
+      eElements.push(word)
+    }
+  })
+  return eElements
 };
 
 // Question 2
