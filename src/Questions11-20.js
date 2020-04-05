@@ -67,9 +67,7 @@ function arrayTotal(array) {
 // Question 16
 
 function doubleArray(array) {
-  var arr = [array, array]
-  var dblArray = [].concat.apply([], arr)
-  return dblArray
+  return array.concat(array)
 };
 
 // Question 17
