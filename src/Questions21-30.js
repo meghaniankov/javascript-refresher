@@ -13,9 +13,13 @@ function swapKeysAndValuesInObject(object) {
 // Question 22
 
 function addKeysAndValues(object) {
-  var keysSum = Object.keys(object).reduce((a,b) => Number(a) + Number(b))
-  var valsSum = Object.values(object).reduce((a,b) => Number(a) + Number(b))
-  return keysSum + valsSum
+  var sum = 0
+
+  for (var prop in object) {
+    sum += object[prop] + Number(prop)
+  }
+  
+  return sum
 };
 
 // Question 23
