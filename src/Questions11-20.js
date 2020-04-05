@@ -3,17 +3,17 @@
 function separateArrayIntoEvenAndOddNumbers(array) {
   var evenArray = []
   var oddArray = []
+  var nestedArray = [evenArray, oddArray]
 
-  array.forEach(number => {
-    if(number % 2 === 0) {
-      evenArray.push(number)
-    } else {
-      oddArray.push(number)
-    }
-  })
+  for(var i=0; i < array.length; i++) {
+    array[i] % 2 === 0 ? evenArray.push(array[i]) : oddArray.push(array[i])
+  }
 
-  array = [evenArray, oddArray]
-  return array
+  // array.forEach(number => {
+  //   number % 2 === 0 ? evenArray.push(number) : oddArray.push(number)
+  // })
+
+  return nestedArray
 };
 
 // Question 12
