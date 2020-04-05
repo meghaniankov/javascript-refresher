@@ -23,8 +23,10 @@ function sayHello() {
 
 // Question 34
 
-function isA2015BankHoliday(date) {
-
+function isA2020BankHoliday(date) {
+  var bankHolidays = ['1/1/2020', '10/4/2020', '13/4/2020', '25/5/2020', '31/8/2020', '25/12/2020', '28/12/2020']
+  var fmtDate = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear()
+  return bankHolidays.includes(fmtDate)
 };
 
 // Question 35

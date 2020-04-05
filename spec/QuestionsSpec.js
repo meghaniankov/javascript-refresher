@@ -173,11 +173,11 @@ describe('JavaScript Refresher Questions', function() {
     expect(callMethodFromString('sayHello')).toEqual('Hello!');
   })
 
-  xit('34. isA2015BankHoliday: returns true if a date is a 2015 Bank holiday', function() {
-    dateA = new Date(2015, 05, 25);
-    dateB = new Date(2015, 02, 06 );
-    expect(isA2015BankHoliday(dateA)).toEqual(true);
-    expect(isA2015BankHoliday(dateB)).toEqual(false);
+  it('34. isA2020BankHoliday: returns true if a date is a 2020 Bank holiday', function() {
+    dateA = new Date(2020, 05, 25);
+    dateB = new Date(2020, 02, 06);
+    expect(isA2020BankHoliday(dateA)).toEqual(true);
+    expect(isA2020BankHoliday(dateB)).toEqual(false);
   });
 
   xit('35. convertToRomanNumerals: returns number from 0 to 99 in roman numeral format', function() {
