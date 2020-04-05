@@ -1,7 +1,19 @@
 // Question 11
 
 function separateArrayIntoEvenAndOddNumbers(array) {
+  var evenArray = []
+  var oddArray = []
 
+  array.forEach(number => {
+    if(number % 2 === 0) {
+      evenArray.push(number)
+    } else {
+      oddArray.push(number)
+    }
+  })
+
+  array = [evenArray, oddArray]
+  return array
 };
 
 // Question 12
