@@ -1,7 +1,7 @@
 // Question 31
 
 function getUpperLimitOfRange(range) {
-
+  // return Math.max(...range)
 };
 
 // Question 32
