@@ -157,7 +157,7 @@ describe('JavaScript Refresher Questions', function() {
     expect(checkStringForSpecialCharacters(stringB)).toBe(true);
   });
 
-  xit('31. getUpperLimitOfRange: return max value of pre-determined range of numbers', function() {
+  it('31. getUpperLimitOfRange: return max value of pre-determined range of numbers', function() {
     range = Array.apply(null, Array(25)).map(function (_, i) {return i+1;});
     expect(getUpperLimitOfRange(range)).toEqual(25);
   });
