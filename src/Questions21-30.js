@@ -18,14 +18,14 @@ function addKeysAndValues(object) {
   for (var prop in object) {
     sum += object[prop] + Number(prop)
   }
-  
+
   return sum
 };
 
 // Question 23
 
 function removeCapitalLettersFromString(string) {
-
+  return string.replace(/[A-Z]+/g, '')
 };
 
 // Question 24
