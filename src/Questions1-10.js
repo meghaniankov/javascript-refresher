@@ -70,6 +70,19 @@ function addElementToBeginningOfArray(array, element) {
 
 function sortArrayByLastLetterOfEachWord(array) {
 
+  for(var i=0; i < array.length; i++) {
+    for(var j=0; j < array.length - i - 1; j++) {
+      var l = array[j].length - 1
+      var l2 = array[j + 1].length - 1
+      if(array[j][l] > array[j+1][l2]) {
+        var cur = array[j]
+        array[j] = array[j+1]
+        array[j+1] = cur
+      }
+    }
+  }
+
+  return array
 };
 
 // Question 9
