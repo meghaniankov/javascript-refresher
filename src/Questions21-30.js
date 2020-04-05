@@ -58,12 +58,14 @@ function roundDownNumber(number) {
 
 function formatDateNicely(date) {
 
-  };
+};
 
 // Question 28
 
 function getDomainNameFromEmailAddress(email) {
-
+  var atIndex = email.match(/@/).index
+  var dotIndex = email.match(/\./).index
+  return email.slice(atIndex + 1,dotIndex)
 };
 
 // Question 29
