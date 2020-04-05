@@ -55,7 +55,8 @@ function reverseEveryElementInArray(array) {
 // Question 6
 
 function dropFirstThreeElements(array) {
-
+  array.splice(0,3)
+  return array
 };
 
 // Question 7
