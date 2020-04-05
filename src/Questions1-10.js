@@ -13,7 +13,14 @@ function selectElementsStartingWithE(array) {
 // Question 2
 
 function selectElementsStartingWithVowel(array) {
+  var vowelElements = []
+  array.forEach(word => {
 
+    if(word[0].match(/[aeiou]/)) {
+      vowelElements.push(word)
+    }
+  })
+  return vowelElements
 };
 
 // Question 3
