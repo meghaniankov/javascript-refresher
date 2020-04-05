@@ -80,7 +80,9 @@ function averageOfArray(array) {
 // Question 18
 
 function removeElementsGreaterThanFive(array) {
-
+  return array.filter(num => {
+    return num <= 5
+  })
 };
 
 function isLessThanFive(element) {
