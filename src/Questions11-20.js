@@ -85,14 +85,16 @@ function removeElementsGreaterThanFive(array) {
   })
 };
 
-function isLessThanFive(element) {
-
-};
-
 // Question 19
 
 function convertArrayToObject(array) {
+  var obj = {}
 
+  for(var i=0; i<array.length; i++) {
+    obj[i] = array[i]
+  }
+
+  return obj
 };
 
 // Question 20
