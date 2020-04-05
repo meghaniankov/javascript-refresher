@@ -83,5 +83,5 @@ function titleizeString(string) {
 // Question 30
 
 function checkStringForSpecialCharacters(string) {
-
+  return string.match(/\W/)
 };
