@@ -34,6 +34,12 @@ function removeNullsFromArray(array) {
 
 function removeNullsAndFalseFromArray(array) {
 
+  var noNullsOrFalses = array.filter(item => {
+    return item !== null && item != false
+  })
+
+  return noNullsOrFalses
+
 };
 
 // Question 5
