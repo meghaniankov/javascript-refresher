@@ -1,25 +1,22 @@
 // Question 1
 
 function selectElementsStartingWithE(array) {
-  var eElements = []
-  array.forEach(word => {
-    if(word[0].toLowerCase() === 'e') {
-      eElements.push(word)
-    }
+
+  var eElements = array.filter(word => {
+    return word[0] === 'e'
   })
+
   return eElements
 };
 
 // Question 2
 
 function selectElementsStartingWithVowel(array) {
-  var vowelElements = []
-  array.forEach(word => {
 
-    if(word[0].match(/[aeiou]/)) {
-      vowelElements.push(word)
-    }
+  var vowelElements = array.filter(word => {
+    return word[0].match(/[aeiou]/)
   })
+
   return vowelElements
 };
 
