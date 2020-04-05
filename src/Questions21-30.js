@@ -71,7 +71,13 @@ function getDomainNameFromEmailAddress(email) {
 // Question 29
 
 function titleizeString(string) {
+  var strArray = string.split(" ")
 
+  for(var i=0;i<strArray.length;i++) {
+    strArray[i] = strArray[i].charAt(0).toUpperCase() + strArray[i].substring(1)
+  }
+
+  return strArray.join(" ")
 };
 
 // Question 30
