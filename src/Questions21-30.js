@@ -2,7 +2,7 @@
 
 function swapKeysAndValuesInObject(object) {
   var swapped = {}
-  
+
   for(var prop in object) {
     swapped[object[prop]] = Number(prop)
   }
@@ -13,7 +13,9 @@ function swapKeysAndValuesInObject(object) {
 // Question 22
 
 function addKeysAndValues(object) {
-
+  var keysSum = Object.keys(object).reduce((a,b) => Number(a) + Number(b))
+  var valsSum = Object.values(object).reduce((a,b) => Number(a) + Number(b))
+  return keysSum + valsSum
 };
 
 // Question 23
