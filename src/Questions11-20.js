@@ -100,5 +100,29 @@ function convertArrayToObject(array) {
 // Question 20
 
 function getLettersInArrayOfWords(array) {
+  var letterArray = []
+  for(var i=0; i < array.length; i++) {
+    var split = array[i].split('')
+    for(var j=0; j < split.length; j++) {
+      letterArray.push(split[j])
+    }
+  }
+
+  return sortLetterArray(letterArray)
 
 };
+
+function sortLetterArray(array) {
+  var letterArray = array
+  for(var i=0; i<letterArray.length; i++) {
+    for(var j=0; j < letterArray.length - i - 1; j++) {
+      if(letterArray[j] > letterArray[j+1]) {
+        var cur = letterArray[j]
+        letterArray[j] = letterArray[j + 1]
+        letterArray[j + 1] = cur
+      }
+    }
+  }
+
+  return letterArray
+}
