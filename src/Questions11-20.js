@@ -73,7 +73,8 @@ function doubleArray(array) {
 // Question 17
 
 function averageOfArray(array) {
-
+  var num = array.reduce((a,b) => a + b) / array.length
+  return Math.round(num * 10) / 10
 };
 
 // Question 18
