@@ -89,6 +89,9 @@ function sortArrayByLastLetterOfEachWord(array) {
 
 function returnFirstHalfOfString(string) {
 
+  var strArray = string.split('')
+  var half = Math.round(strArray.length / 2)
+  return strArray.splice(0,half).join('')
 };
 
 // Question 10
