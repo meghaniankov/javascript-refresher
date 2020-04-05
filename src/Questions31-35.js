@@ -13,8 +13,13 @@ function squareRootOf(number) {
 // Question 33
 
 function callMethodFromString(string) {
-
+  var func = string + '()'
+  return eval(func)
 };
+
+function sayHello() {
+  return 'Hello!'
+}
 
 // Question 34
 
