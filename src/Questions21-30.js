@@ -57,7 +57,10 @@ function roundDownNumber(number) {
 // Question 27
 
 function formatDateNicely(date) {
-
+  var year = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(date)
+  var month = new Intl.DateTimeFormat('en', { month: 'short' }).format(date)
+  var day = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(date)
+  return day + '-' + month + '-' + year
 };
 
 // Question 28
