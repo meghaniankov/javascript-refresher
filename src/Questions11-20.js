@@ -5,13 +5,9 @@ function separateArrayIntoEvenAndOddNumbers(array) {
   var oddArray = []
   var nestedArray = [evenArray, oddArray]
 
-  for(var i=0; i < array.length; i++) {
-    array[i] % 2 === 0 ? evenArray.push(array[i]) : oddArray.push(array[i])
-  }
-
-  // array.forEach(number => {
-  //   number % 2 === 0 ? evenArray.push(number) : oddArray.push(number)
-  // })
+  array.forEach(number => {
+    number % 2 === 0 ? evenArray.push(number) : oddArray.push(number)
+  })
 
   return nestedArray
 };
