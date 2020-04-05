@@ -18,17 +18,8 @@ function numberOfElementsThatArePalindromes(array) {
   var count = 0
 
   array.forEach(word => {
-    var letterCount = 0
-    var wordArray = word.split('')
-    var reverse = word.split('').reverse()
-    for(var i=0; i<wordArray.length; i++) {
-      if(wordArray[i] === reverse[i]) {
-        letterCount++
-      }
-      if(letterCount === wordArray.length) {
-        count++
-      }
-    } 
+    var reverse = word.split('').reverse().join('')
+    word === reverse ? count++ : count
   })
 
   return count
