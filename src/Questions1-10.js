@@ -23,8 +23,8 @@ function selectElementsStartingWithVowel(array) {
 // Question 3
 
 function removeNullsFromArray(array) {
-  var noNulls = array.filter(item => {
-    return item !== null
+  var noNulls = array.filter(element => {
+    return element !== null
   })
 
   return noNulls
@@ -34,18 +34,22 @@ function removeNullsFromArray(array) {
 
 function removeNullsAndFalseFromArray(array) {
 
-  var noNullsOrFalses = array.filter(item => {
-    return item !== null && item != false
+  var noNullsOrFalses = array.filter(element => {
+    return element !== null && element != false
   })
 
   return noNullsOrFalses
-
 };
 
 // Question 5
 
 function reverseEveryElementInArray(array) {
+  var reveresedArray = []
+  array.forEach(element => {
+    reveresedArray.push(element.split('').reverse().join(''))
+  })
 
+  return reveresedArray
 };
 
 // Question 6
