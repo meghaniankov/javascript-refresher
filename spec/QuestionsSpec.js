@@ -162,7 +162,7 @@ describe('JavaScript Refresher Questions', function() {
     expect(getUpperLimitOfRange(range)).toEqual(25);
   });
 
-  xit('32. squareRootOf: return the square root of a given number', function() {
+  it('32. squareRootOf: return the square root of a given number', function() {
     numberA = 25;
     numberB = 75;
     expect(squareRootOf(25)).toEqual(5);

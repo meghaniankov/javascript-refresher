@@ -7,7 +7,7 @@ function getUpperLimitOfRange(range) {
 // Question 32
 
 function squareRootOf(number) {
-
+  return Math.sqrt(number)
 };
 
 // Question 33
