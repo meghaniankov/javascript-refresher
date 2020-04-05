@@ -23,7 +23,11 @@ function selectElementsStartingWithVowel(array) {
 // Question 3
 
 function removeNullsFromArray(array) {
+  var noNulls = array.filter(item => {
+    return item !== null
+  })
 
+  return noNulls
 };
 
 // Question 4
