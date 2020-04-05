@@ -97,9 +97,6 @@ function returnFirstHalfOfString(string) {
 // Question 10
 
 function makeNumberNegative(number) {
-  if (number < 0) {
-    return number
-  } else {
-    return number * -1
-  }
+  var negative = number < 0 ? number : -number
+  return negative
 };
