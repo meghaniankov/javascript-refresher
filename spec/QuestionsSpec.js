@@ -180,7 +180,7 @@ describe('JavaScript Refresher Questions', function() {
     expect(isA2020BankHoliday(dateB)).toEqual(false);
   });
 
-  xit('35. convertToRomanNumerals: returns number from 0 to 99 in roman numeral format', function() {
+  it('35. convertToRomanNumerals: returns number from 0 to 99 in roman numeral format', function() {
     numberA = 6;
     numberB = 25;
     numberC = 87;

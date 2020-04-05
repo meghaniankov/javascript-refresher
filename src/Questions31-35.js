@@ -32,5 +32,26 @@ function isA2020BankHoliday(date) {
 // Question 35
 
 function convertToRomanNumerals(number) {
+  var lookup = {
+    'C': 100,
+    'XC': 90,
+    'L': 50,
+    'XL': 40,
+    'X': 10,
+    'IX': 9,
+    'V': 5,
+    'IV': 4,
+    'I': 1,
+  }
 
+  var romanNumeral = ''
+
+  for (numeral in lookup) {
+    while(number >= lookup[numeral]) {
+      romanNumeral += numeral
+      number -= lookup[numeral]
+    }
+  }
+
+  return romanNumeral
 };
